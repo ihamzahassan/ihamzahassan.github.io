@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hamza Hassan — Senior ServiceNow Consultant</title>
-<meta name="description" content="Hamza Hassan — Senior ServiceNow Consultant. ITSM, integrations, custom apps and evidence-based production support.">
+<meta name="description" content="Hamza Hassan — Senior ServiceNow Consultant. ITSM, HR Service Delivery, integrations, custom apps and evidence-based production support.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hamza Hassan — Senior ServiceNow Consultant">
-<meta property="og:description" content="ITSM, integrations, custom apps and evidence-based production support. See how I work, not just what I list.">
+<meta property="og:description" content="ITSM, HR Service Delivery, integrations, custom apps and evidence-based production support. See how I work, not just what I list.">
 <meta property="og:url" content="https://ihamzahassan.github.io/">
 <meta property="og:site_name" content="Hamza Hassan">
 <meta property="og:image" content="https://ihamzahassan.github.io/og.png">
@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://ihamzahassan.github.io/og.png">
 <meta name="twitter:title" content="Hamza Hassan — Senior ServiceNow Consultant">
-<meta name="twitter:description" content="ITSM, integrations, custom apps and evidence-based production support.">
+<meta name="twitter:description" content="ITSM, HR Service Delivery, integrations, custom apps and evidence-based production support.">
 <meta name="theme-color" content="#0B1F26">
 <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&%23x27;http://www.w3.org/2000/svg&%23x27; viewBox=&%23x27;0 0 64 64&%23x27;&gt;&lt;rect width=&%23x27;64&%23x27; height=&%23x27;64&%23x27; rx=&%23x27;14&%23x27; fill=&%23x27;%230B1F26&%23x27;/&gt;&lt;circle cx=&%23x27;32&%23x27; cy=&%23x27;32&%23x27; r=&%23x27;11&%23x27; fill=&%23x27;%233DBFA6&%23x27;/&gt;&lt;circle cx=&%23x27;32&%23x27; cy=&%23x27;32&%23x27; r=&%23x27;18&%23x27; fill=&%23x27;none&%23x27; stroke=&%23x27;%233DBFA6&%23x27; stroke-opacity=&%23x27;.35&%23x27; stroke-width=&%23x27;3&%23x27;/&gt;&lt;/svg&gt;">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -216,6 +216,31 @@ footer{padding:28px 0 48px;font-size:14px;color:var(--slate);position:relative;z
 .reveal{opacity:0;filter:blur(8px);transform:translateY(18px);transition:opacity .7s ease,filter .7s ease,transform .7s ease;transition-delay:var(--d,0ms)}
 .reveal.in{opacity:1;filter:blur(0);transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;filter:none;transform:none}.wire{animation:none;stroke-dashoffset:0}.pop{animation:none;opacity:1}*{transition:none!important;animation:none!important}}
+
+/* ---- polish ---- */
+.avail{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12.5px;color:var(--mint);background:rgba(61,191,166,.1);border:1px solid rgba(61,191,166,.35);padding:5px 12px;border-radius:999px;margin-bottom:18px}
+.avail i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(61,191,166,.6);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(61,191,166,.55)}80%,100%{box-shadow:0 0 0 9px rgba(61,191,166,0)}}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0}
+.chips li{font-family:var(--mono);font-size:12.5px;color:var(--on-deep);border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);padding:4px 10px;border-radius:999px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+nav li a.nav-cta{color:var(--deep);background:var(--mint);margin-left:4px}
+nav li a.nav-cta:hover,nav li a.nav-cta.on{color:var(--deep);background:#58d3bb}
+@media(max-width:760px){nav li a.nav-cta{margin:6px 0 0;text-align:center}}
+.cred,.stat{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.cred:hover{transform:translateY(-3px);border-color:var(--teal);box-shadow:0 10px 24px rgba(11,31,38,.08)}
+.job{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px}
+.job::before{top:26px;left:-31px}
+@media(max-width:640px){.job{padding:16px}.job::before{left:-23px}}
+.contact{grid-template-columns:1fr auto}
+.contact-main{position:relative;z-index:1}
+.cta-col .btn{min-width:170px;text-align:center}
+.cta-col .btn.ghost{color:#fff;background:transparent;border:1px solid rgba(255,255,255,.25)}
+.cta-col .btn.ghost:hover{background:rgba(255,255,255,.08)}
+@media(max-width:760px){.contact{grid-template-columns:1fr}.cta-col{flex-direction:row;flex-wrap:wrap;align-items:flex-start}.cta-col .btn{min-width:0}}
+#totop{position:fixed;right:20px;bottom:20px;z-index:35;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-weight:800;color:var(--deep);background:var(--mint);box-shadow:0 8px 20px rgba(0,0,0,.25);opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .25s,transform .25s}
+#totop.show{opacity:1;pointer-events:auto;transform:none}
+.reveal{filter:blur(3px);transform:translateY(12px);transition:opacity .5s ease,filter .5s ease,transform .5s ease}
 </style>
 </head>
 <body>
@@ -225,7 +250,7 @@ footer{padding:28px 0 48px;font-size:14px;color:var(--slate);position:relative;z
   <a class="brand" href="#top"><i></i>Hamza Hassan</a>
   <button id="burger" aria-label="Menu" aria-expanded="false">☰</button>
   <ul id="menu">
-    <li><a href="#experience">Experience</a></li><li><a href="#method">Method</a></li><li><a href="#work">Work</a></li><li><a href="#creds">Credentials</a></li><li><a href="#contact">Contact</a></li>
+    <li><a href="#experience">Experience</a></li><li><a href="#method">Method</a></li><li><a href="#work">Work</a></li><li><a href="#creds">Credentials</a></li><li><a href="#contact" class="nav-cta">Contact</a></li>
     <li><button id="theme" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></li>
   </ul>
 </div></nav>
@@ -233,9 +258,11 @@ footer{padding:28px 0 48px;font-size:14px;color:var(--slate);position:relative;z
 <header class="hero" id="top"><div class="wrap">
   <div class="hero-grid">
     <div>
+      <span class="avail"><i></i>Open to new roles · UK &amp; Europe</span>
       <h1>ServiceNow, from requirement to&nbsp;root&nbsp;cause.</h1>
-      <p class="lede">Senior ServiceNow Consultant, open to roles across the UK and Europe. Five years designing, building and supporting enterprise instances — requirements, integrations, custom apps, UAT, and the Level 3 investigations when production does something nobody expected.</p>
-      <div class="cta"><a class="btn primary" href="#work">See what I build</a><a class="btn ghost" href="CV_hamza.pdf" target="_blank" rel="noopener" download>Download CV</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+      <p class="lede">Senior ServiceNow Consultant with five years designing, building and supporting enterprise instances — ITSM, HR Service Delivery, integrations, custom apps, UAT, and the Level 3 investigations when production does something nobody expected.</p>
+      <div class="cta"><a class="btn primary" href="#work">See what I build</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+      <ul class="chips" aria-label="Platform areas"><li>ITSM</li><li>HRSD</li><li>CSM</li><li>Integrations</li><li>Flow Designer</li><li>CMDB</li></ul>
     </div>
     <div class="console" aria-label="Interactive console">
       <div class="bar"><i></i><i></i><i></i><span>background script · hamza.hassan</span></div>
@@ -273,10 +300,12 @@ footer{padding:28px 0 48px;font-size:14px;color:var(--slate);position:relative;z
 </div></div>
 
 <section id="experience"><div class="wrap">
+  <div class="eyebrow">01 · Experience</div>
   <h2>Experience</h2>
   <div class="xp">
     <div class="job"><div class="when">2021 — present</div><h3>ServiceNow Consultant, Sopra Steria</h3><div class="where">UK</div>
-      <ul><li>Lead requirements analysis and solution design with tech leads and BAs across ITSM, CSM, PPM, Field Service and custom scoped apps.</li>
+      <ul><li>Lead requirements analysis and solution design with tech leads and BAs across ITSM, CSM, HRSD, PPM, Field Service and custom scoped apps.</li>
+      <li>Build HR Service Delivery: HR services and case workflows, Joiner/Mover/Leaver lifecycle events across HR, IT, Facilities and Payroll, Employee Center, HR knowledge and Virtual Agent HR topics, with HR criteria and ACLs securing sensitive cases.</li>
       <li>Design and build Scripted REST APIs, REST/SOAP integrations and IntegrationHub flows with external portals, monitoring tools and supplier systems.</li>
       <li>Deliver Flow Designer, Service Catalog, Service Portal widgets and UI Pages to platform standards; lead peer review and documentation.</li>
       <li>Run Level 3 production support — evidence-based root cause, safe release through dev, stage and prod, verified data correction.</li>
@@ -289,6 +318,7 @@ footer{padding:28px 0 48px;font-size:14px;color:var(--slate);position:relative;z
 </div></section>
 
 <section id="method"><div class="wrap">
+  <div class="eyebrow">02 · Method</div>
   <h2>How I work a defect</h2>
   <p class="muted">Guessing is expensive on a production platform. I'd rather spend an hour proving the cause than a week shipping fixes for the wrong one.</p>
   <div class="method">
@@ -301,23 +331,25 @@ footer{padding:28px 0 48px;font-size:14px;color:var(--slate);position:relative;z
 </div></section>
 
 <section id="work"><div class="wrap">
+  <div class="eyebrow">03 · Work</div>
   <h2>What I build and fix</h2>
   <p class="muted">Pick an area. Press <kbd style="font-family:var(--mono);font-size:12px;border:1px solid var(--line);border-radius:5px;padding:1px 6px">/</kbd> to search.</p>
   <div class="explorer">
     <div>
-      <label class="search"><span>find</span><input id="q" type="search" placeholder="integration, CMDB, approvals…" autocomplete="off"><kbd>/</kbd></label>
-      <div class="list" id="list" role="listbox" aria-label="Work areas"><button class="item" role="option" data-id="itsm" aria-selected="true"><span class="ico">ITSM</span><span><b>ITSM implementation</b><span>Incident · Problem · Change · Request</span></span></button><button class="item" role="option" data-id="int" aria-selected="false"><span class="ico">API</span><span><b>Integrations</b><span>Scripted REST · REST/SOAP · IntegrationHub</span></span></button><button class="item" role="option" data-id="apps" aria-selected="false"><span class="ico">APP</span><span><b>Custom apps & portals</b><span>Scoped apps · Service Portal · UI Pages</span></span></button><button class="item" role="option" data-id="flow" aria-selected="false"><span class="ico">FLOW</span><span><b>Workflow & approvals</b><span>Flow Designer · Catalog · record producers</span></span></button><button class="item" role="option" data-id="cmdb" aria-selected="false"><span class="ico">CI</span><span><b>CMDB & Asset</b><span>CI relationships · imports · asset states</span></span></button><button class="item" role="option" data-id="l3" aria-selected="false"><span class="ico">L3</span><span><b>Production support</b><span>Root cause · release · data repair</span></span></button><button class="item" role="option" data-id="gov" aria-selected="false"><span class="ico">GOV</span><span><b>Governance & mentoring</b><span>Standards · peer review · documentation</span></span></button><button class="item" role="option" data-id="stk" aria-selected="false"><span class="ico">BA</span><span><b>Stakeholder liaison</b><span>Requirements · training · BAU handover</span></span></button></div>
+      <label class="search"><span>find</span><input id="q" type="search" placeholder="HRSD, integration, CMDB…" autocomplete="off"><kbd>/</kbd></label>
+      <div class="list" id="list" role="listbox" aria-label="Work areas"><button class="item" role="option" data-id="itsm" aria-selected="true"><span class="ico">ITSM</span><span><b>ITSM implementation</b><span>Incident · Problem · Change · Request</span></span></button><button class="item" role="option" data-id="hr" aria-selected="false"><span class="ico">HR</span><span><b>HR Service Delivery</b><span>HR cases · Lifecycle Events · Employee Center</span></span></button><button class="item" role="option" data-id="int" aria-selected="false"><span class="ico">API</span><span><b>Integrations</b><span>Scripted REST · REST/SOAP · IntegrationHub</span></span></button><button class="item" role="option" data-id="apps" aria-selected="false"><span class="ico">APP</span><span><b>Custom apps & portals</b><span>Scoped apps · Service Portal · UI Pages</span></span></button><button class="item" role="option" data-id="flow" aria-selected="false"><span class="ico">FLOW</span><span><b>Workflow & approvals</b><span>Flow Designer · Catalog · record producers</span></span></button><button class="item" role="option" data-id="cmdb" aria-selected="false"><span class="ico">CI</span><span><b>CMDB & Asset</b><span>CI relationships · imports · asset states</span></span></button><button class="item" role="option" data-id="l3" aria-selected="false"><span class="ico">L3</span><span><b>Production support</b><span>Root cause · release · data repair</span></span></button><button class="item" role="option" data-id="gov" aria-selected="false"><span class="ico">GOV</span><span><b>Governance & mentoring</b><span>Standards · peer review · documentation</span></span></button><button class="item" role="option" data-id="stk" aria-selected="false"><span class="ico">BA</span><span><b>Stakeholder liaison</b><span>Requirements · training · BAU handover</span></span></button></div>
     </div>
     <div class="detail" id="detail"><div class="fade"><h3>ITSM implementation</h3><span class="tag">ITSM</span><span class="tag">CIS-ITSM certified</span>
   <div class="grid2"><div><h4>The situation</h4><p>Organisations need Incident, Problem, Change, Request and Major Incident processes that match how they actually work, not the out-of-box defaults.</p><h4>How I approach it</h4><p>Start from the ITIL process, map it to platform capability, then design the minimum customisation that closes the gap — SLAs, assignment, notifications, approvals, state models.</p></div>
   <div><h4 class="cause">What usually goes wrong</h4><p>State models and notification logic customised without a design, then layered on for years.</p><h4>What I deliver</h4><p>A documented target process, configuration before code, and tests for the edge states that break automation.</p></div></div>
   <pre><button data-copy>Copy</button><span class="c">// prefer condition builders and Flow Designer over script;</span>
 <span class="c">// script only where the platform cannot express the rule</span></pre></div></div>
-  <div id="work-static" class="work-static"><article><h3>ITSM implementation</h3><p><strong>The situation:</strong> Organisations need Incident, Problem, Change, Request and Major Incident processes that match how they actually work, not the out-of-box defaults.</p><p><strong>How I approach it:</strong> Start from the ITIL process, map it to platform capability, then design the minimum customisation that closes the gap — SLAs, assignment, notifications, approvals, state models.</p><p><strong>What usually goes wrong:</strong> State models and notification logic customised without a design, then layered on for years.</p><p><strong>What I deliver:</strong> A documented target process, configuration before code, and tests for the edge states that break automation.</p></article><article><h3>Integrations</h3><p><strong>The situation:</strong> Partner portals, supplier systems, monitoring tools and public data APIs all need to talk to the platform reliably.</p><p><strong>How I approach it:</strong> Design the contract first (auth, payloads, error shape), build Scripted REST resources or outbound REST Messages, and capture real request/response pairs for the documentation.</p><p><strong>What usually goes wrong:</strong> Boundary defects: date formats, type coercion, null dot-walks, a response never returned on the failure path.</p><p><strong>What I deliver:</strong> Strict parsing on the way in, explicit responses on every path, abort conditions on imports, and a caller map so the next person knows who depends on what.</p></article><article><h3>Custom apps & portals</h3><p><strong>The situation:</strong> Processes that do not fit a standard module — field partners, wholesale customers, finance teams — need their own application or portal experience.</p><p><strong>How I approach it:</strong> Model the tables in a scoped app, build Service Portal widgets or UI Pages for the front end, and secure external access with tokens rather than accounts where appropriate.</p><p><strong>What usually goes wrong:</strong> Scope creep and invisible coupling to core tables.</p><p><strong>What I deliver:</strong> Every scoped table has an owner, every cross-scope call goes through a Script Include, and server logic is testable from a background script.</p></article><article><h3>Workflow & approvals</h3><p><strong>The situation:</strong> Approvals routed to the wrong people, catalog items with complex variable logic, record producers feeding downstream automation.</p><p><strong>How I approach it:</strong> Walk every action in the flow, confirm what each subflow maps, and check the variable names the producer script actually reads.</p><p><strong>What usually goes wrong:</strong> Approver lists hard-wired to individuals, and one mapping that was never added.</p><p><strong>What I deliver:</strong> Routing by group or attribute, explicit mappings, and a backfill for any records the gap affected.</p></article><article><h3>CMDB & Asset</h3><p><strong>The situation:</strong> Asset states drifting, pick lists out of sync, model data of uncertain quality, discovery results that need validating with infrastructure teams.</p><p><strong>How I approach it:</strong> Check how each state transition is triggered, whether parameters arrive as the type the script assumes, and whether any bulk operation can run against an empty query.</p><p><strong>What usually goes wrong:</strong> Type coercion (a string "false" is truthy) and unguarded deletes.</p><p><strong>What I deliver:</strong> Explicit casts, complete state passed to sync routines, a guard on every deleteMultiple, and imports validated with the teams who own the source.</p></article><article><h3>Production support</h3><p><strong>The situation:</strong> A live defect with a symptom, a customer waiting, and several plausible theories.</p><p><strong>How I approach it:</strong> Reproduce in dev against real data. Read sys_audit, sysevent and syslog for what fired and in what order. Watch rules execute in Script Tracer. Disprove theories one at a time.</p><p><strong>What usually goes wrong:</strong> It is always one specific line — a case-sensitive compare, a return inside a loop, a missing guard, an update() on an uncommitted record. Sometimes the honest answer is that no code defect exists.</p><p><strong>What I deliver:</strong> The corrected logic simulated against the affected record before code changes, release through update sets, then a dry-run-checked backfill with setWorkflow(false).</p></article><article><h3>Governance & mentoring</h3><p><strong>The situation:</strong> A growing team, a customised instance and a release path where an uncommitted update set or an over-wide change can quietly reach production.</p><p><strong>How I approach it:</strong> Peer review every change, keep dev, stage and prod aligned, and document APIs, handovers and known risks.</p><p><strong>What usually goes wrong:</strong> Release failures: a fix loaded but never committed, or a reference-data change that went wider than intended.</p><p><strong>What I deliver:</strong> Validation scripts before deployment, rollback plans for anything touching reference data, and knowledge articles so the fix survives the person who made it.</p></article><article><h3>Stakeholder liaison</h3><p><strong>The situation:</strong> Customers, BAs, finance and operations teams need to understand what the platform does, what went wrong, and what happens next — without table names.</p><p><strong>How I approach it:</strong> Run requirements sessions, translate findings into plain language, and give stakeholders decision lists rather than theories.</p><p><strong>What usually goes wrong:</strong> Technical detail that is accurate but unreadable does not move a decision.</p><p><strong>What I deliver:</strong> Two write-ups for every significant piece of work: a technical note for developers and a plain-language summary for everyone else.</p></article></div>
+  <div id="work-static" class="work-static"><article><h3>ITSM implementation</h3><p><strong>The situation:</strong> Organisations need Incident, Problem, Change, Request and Major Incident processes that match how they actually work, not the out-of-box defaults.</p><p><strong>How I approach it:</strong> Start from the ITIL process, map it to platform capability, then design the minimum customisation that closes the gap — SLAs, assignment, notifications, approvals, state models.</p><p><strong>What usually goes wrong:</strong> State models and notification logic customised without a design, then layered on for years.</p><p><strong>What I deliver:</strong> A documented target process, configuration before code, and tests for the edge states that break automation.</p></article><article><h3>HR Service Delivery</h3><p><strong>The situation:</strong> Joiners, movers and leavers touch HR, IT, Facilities and Payroll at once — and employees expect one place to ask HR anything, with sensitive cases kept private.</p><p><strong>How I approach it:</strong> Model each journey as a lifecycle event — event definition, activity sets, activities — connected to user provisioning and IT catalog requests. HR services, HR criteria and Employee Center decide who can request and see what.</p><p><strong>What I deliver:</strong> Activity sets triggered by conditions rather than dates alone, HR criteria and ACLs tested with real personas, and one journey every team can follow.</p></article><article><h3>Integrations</h3><p><strong>The situation:</strong> Partner portals, supplier systems, monitoring tools and public data APIs all need to talk to the platform reliably.</p><p><strong>How I approach it:</strong> Design the contract first (auth, payloads, error shape), build Scripted REST resources or outbound REST Messages, and capture real request/response pairs for the documentation.</p><p><strong>What usually goes wrong:</strong> Boundary defects: date formats, type coercion, null dot-walks, a response never returned on the failure path.</p><p><strong>What I deliver:</strong> Strict parsing on the way in, explicit responses on every path, abort conditions on imports, and a caller map so the next person knows who depends on what.</p></article><article><h3>Custom apps & portals</h3><p><strong>The situation:</strong> Processes that do not fit a standard module — field partners, wholesale customers, finance teams — need their own application or portal experience.</p><p><strong>How I approach it:</strong> Model the tables in a scoped app, build Service Portal widgets or UI Pages for the front end, and secure external access with tokens rather than accounts where appropriate.</p><p><strong>What usually goes wrong:</strong> Scope creep and invisible coupling to core tables.</p><p><strong>What I deliver:</strong> Every scoped table has an owner, every cross-scope call goes through a Script Include, and server logic is testable from a background script.</p></article><article><h3>Workflow & approvals</h3><p><strong>The situation:</strong> Approvals routed to the wrong people, catalog items with complex variable logic, record producers feeding downstream automation.</p><p><strong>How I approach it:</strong> Walk every action in the flow, confirm what each subflow maps, and check the variable names the producer script actually reads.</p><p><strong>What usually goes wrong:</strong> Approver lists hard-wired to individuals, and one mapping that was never added.</p><p><strong>What I deliver:</strong> Routing by group or attribute, explicit mappings, and a backfill for any records the gap affected.</p></article><article><h3>CMDB & Asset</h3><p><strong>The situation:</strong> Asset states drifting, pick lists out of sync, model data of uncertain quality, discovery results that need validating with infrastructure teams.</p><p><strong>How I approach it:</strong> Check how each state transition is triggered, whether parameters arrive as the type the script assumes, and whether any bulk operation can run against an empty query.</p><p><strong>What usually goes wrong:</strong> Type coercion (a string "false" is truthy) and unguarded deletes.</p><p><strong>What I deliver:</strong> Explicit casts, complete state passed to sync routines, a guard on every deleteMultiple, and imports validated with the teams who own the source.</p></article><article><h3>Production support</h3><p><strong>The situation:</strong> A live defect with a symptom, a customer waiting, and several plausible theories.</p><p><strong>How I approach it:</strong> Reproduce in dev against real data. Read sys_audit, sysevent and syslog for what fired and in what order. Watch rules execute in Script Tracer. Disprove theories one at a time.</p><p><strong>What usually goes wrong:</strong> It is always one specific line — a case-sensitive compare, a return inside a loop, a missing guard, an update() on an uncommitted record. Sometimes the honest answer is that no code defect exists.</p><p><strong>What I deliver:</strong> The corrected logic simulated against the affected record before code changes, release through update sets, then a dry-run-checked backfill with setWorkflow(false).</p></article><article><h3>Governance & mentoring</h3><p><strong>The situation:</strong> A growing team, a customised instance and a release path where an uncommitted update set or an over-wide change can quietly reach production.</p><p><strong>How I approach it:</strong> Peer review every change, keep dev, stage and prod aligned, and document APIs, handovers and known risks.</p><p><strong>What usually goes wrong:</strong> Release failures: a fix loaded but never committed, or a reference-data change that went wider than intended.</p><p><strong>What I deliver:</strong> Validation scripts before deployment, rollback plans for anything touching reference data, and knowledge articles so the fix survives the person who made it.</p></article><article><h3>Stakeholder liaison</h3><p><strong>The situation:</strong> Customers, BAs, finance and operations teams need to understand what the platform does, what went wrong, and what happens next — without table names.</p><p><strong>How I approach it:</strong> Run requirements sessions, translate findings into plain language, and give stakeholders decision lists rather than theories.</p><p><strong>What usually goes wrong:</strong> Technical detail that is accurate but unreadable does not move a decision.</p><p><strong>What I deliver:</strong> Two write-ups for every significant piece of work: a technical note for developers and a plain-language summary for everyone else.</p></article></div>
   </div>
 </div></section>
 
 <section id="creds"><div class="wrap">
+  <div class="eyebrow">04 · Credentials</div>
   <h2>Credentials</h2>
   <div class="creds">
     <div class="cred"><div class="badge">CSA</div><div><b>Certified System Administrator</b><span>ServiceNow</span></div></div>
@@ -334,12 +366,19 @@ footer{padding:28px 0 48px;font-size:14px;color:var(--slate);position:relative;z
 
 <section id="contact"><div class="wrap">
   <div class="contact">
-    <div><h2>Let's talk ServiceNow.</h2><p>Open to consultant, lead developer and architect roles across the UK and Europe — on-site, hybrid or remote.</p>
-      <div class="lines"><a href="mailto:ihamzahassan@hotmail.com">ihamzahassan@hotmail.com</a><br>+44 7387 956012<br><a href="https://www.linkedin.com/in/hamza-hassan-246178166/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/ihamzahassan" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp; <a href="CV_hamza.pdf" target="_blank" rel="noopener" download>CV (PDF)</a></div></div>
-    
+    <div class="contact-main"><h2>Let's talk ServiceNow.</h2><p>Open to consultant, lead developer and architect roles across the UK and Europe — on-site, hybrid or remote.</p>
+      <div class="lines"><a href="mailto:ihamzahassan@hotmail.com">ihamzahassan@hotmail.com</a><br>+44 7387 956012</div></div>
+    <div class="cta-col">
+      <a class="btn primary" href="mailto:ihamzahassan@hotmail.com">Email me</a>
+      <button class="btn ghost" id="copy-email" type="button">Copy email</button>
+      <a class="btn ghost" href="https://www.linkedin.com/in/hamza-hassan-246178166/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/ihamzahassan" target="_blank" rel="noopener">GitHub</a>
+      <span id="copy-note" aria-live="polite"></span>
+    </div>
   </div>
 </div></section>
-<footer><div class="wrap">Hamza Hassan · Senior ServiceNow Consultant · UK &amp; Europe &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/hamza-hassan-246178166/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/ihamzahassan" target="_blank" rel="noopener">GitHub</a></div></footer>
+<a href="#top" id="totop" aria-label="Back to top">↑</a>
+<footer><div class="wrap">© <span id="yr">2026</span> Hamza Hassan · Senior ServiceNow Consultant · UK &amp; Europe &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/hamza-hassan-246178166/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/ihamzahassan" target="_blank" rel="noopener">GitHub</a></div></footer>
 
 <script>
 document.documentElement.classList.remove('no-js');
@@ -351,6 +390,12 @@ const WORK=[
  wrong:'State models and notification logic customised without a design, then layered on for years.',
  out:'A documented target process, configuration before code, and tests for the edge states that break automation.',
  code:`<span class="c">// prefer condition builders and Flow Designer over script;</span>\n<span class="c">// script only where the platform cannot express the rule</span>`},
+{id:'hr',ico:'HR',t:'HR Service Delivery',s:'HR cases · Lifecycle Events · Employee Center',tags:['HRSD','Lifecycle Events','Employee Center'],
+ sit:'Joiners, movers and leavers touch HR, IT, Facilities and Payroll at once — and employees expect one place to ask HR anything, with sensitive cases kept private.',
+ how:'Model each journey as a lifecycle event — event definition, activity sets, activities — connected to user provisioning and IT catalog requests. HR services, HR criteria and Employee Center decide who can request and see what.',
+ wrong:'Onboarding tasks that fire before the data they depend on exists, and sensitive HR cases visible to agents who should never see them.',
+ out:'Activity sets triggered by conditions rather than dates alone, HR criteria and ACLs tested with real personas, and one journey every team can follow.',
+ code:`<span class="c">// trigger activity sets on conditions, not dates alone;</span>\n<span class="c">// test HR criteria with real personas before go-live</span>`},
 {id:'int',ico:'API',t:'Integrations',s:'Scripted REST · REST/SOAP · IntegrationHub',tags:['Integrations','Scripted REST','Transform maps'],
  sit:'Partner portals, supplier systems, monitoring tools and public data APIs all need to talk to the platform reliably.',
  how:'Design the contract first (auth, payloads, error shape), build Scripted REST resources or outbound REST Messages, and capture real request/response pairs for the documentation.',
@@ -398,7 +443,7 @@ const WORK=[
 /* ---------- console ---------- */
 const CMDS={
  'whoami()':`<span class="p">></span> <span class="k">Hamza Hassan</span>\n  Senior ServiceNow Consultant · UK &amp; Europe\n  5+ years · CSA · CAD · CIS-ITSM · ITIL`,
- 'getSkills()':`<span class="p">></span> [\n  <span class="k">'Scripted REST'</span>, <span class="k">'Flow Designer'</span>, <span class="k">'Script Includes'</span>,\n  <span class="k">'Service Portal'</span>, <span class="k">'CMDB'</span>, <span class="k">'IntegrationHub'</span>,\n  <span class="k">'Script Tracer'</span>, <span class="k">'sys_audit forensics'</span>\n]`,
+ 'getSkills()':`<span class="p">></span> [\n  <span class="k">'ITSM'</span>, <span class="k">'HRSD'</span>, <span class="k">'CSM'</span>, <span class="k">'Scripted REST'</span>,\n  <span class="k">'Flow Designer'</span>, <span class="k">'Script Includes'</span>,\n  <span class="k">'Service Portal'</span>, <span class="k">'CMDB'</span>, <span class="k">'IntegrationHub'</span>,\n  <span class="k">'Script Tracer'</span>, <span class="k">'sys_audit forensics'</span>\n]`,
  'getExperience()':`<span class="p">></span> 2021–now   Sopra Steria        ServiceNow Consultant\n<span class="p">></span> 2020–2021  Core Technologies   Admin / Developer`,
  'traceDefect()':`<span class="p">></span> reproduce in dev ......... <span class="k">done</span>\n<span class="p">></span> read sys_audit / sysevent  <span class="k">done</span>\n<span class="p">></span> root cause ............... <span class="k">line 42: case-sensitive compare</span>\n<span class="p">></span> simulate fix ............. <span class="k">values match</span>\n<span class="p">></span> release + backfill ....... <span class="k">dry run ok → applied</span>`,
  'contact()':`<span class="p">></span> ihamzahassan@hotmail.com\n<span class="p">></span> +44 7387 956012`,
@@ -504,6 +549,15 @@ const links=[...document.querySelectorAll('nav li a[href^="#"]')];
 const obs=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+en.target.id));}),{rootMargin:'-40% 0px -55% 0px'});
 document.querySelectorAll('section[id]').forEach(s=>obs.observe(s));
 addEventListener('scroll',()=>{const h=document.body.scrollHeight-innerHeight;document.getElementById('progress').style.width=(scrollY/h*100)+'%';},{passive:true});
+
+/* ---------- polish: copy email, back-to-top, mobile detail scroll, year ---------- */
+document.getElementById('yr').textContent=new Date().getFullYear();
+const ce=document.getElementById('copy-email'),cn=document.getElementById('copy-note');
+ce&&ce.addEventListener('click',()=>{navigator.clipboard?.writeText('ihamzahassan@hotmail.com').then(()=>{cn.textContent='Email copied';setTimeout(()=>cn.textContent='',1800);});});
+const tt=document.getElementById('totop');addEventListener('scroll',()=>tt.classList.toggle('show',scrollY>700),{passive:true});
+list.addEventListener('click',e=>{if(e.target.closest('.item')&&matchMedia('(max-width:860px)').matches)detail.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});});
+const bg=document.getElementById('burger'),mn=document.getElementById('menu');bg.addEventListener('click',()=>{const o=mn.classList.toggle('open');bg.setAttribute('aria-expanded',o);bg.textContent=o?'✕':'☰';});
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>{const m=document.getElementById('menu');m.classList.remove('open');bg.setAttribute('aria-expanded','false');bg.textContent='☰';}));
 </script>
 </body>
 </html>
